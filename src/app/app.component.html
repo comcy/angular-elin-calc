@@ -1,0 +1,21 @@
+<div class="title">
+	<h1>Aufgabe {{ count }}</h1>
+</div>
+
+<div class="equation">
+
+	<h2>{{ ten }} {{ sign }} {{ one }} =
+		<ng-container *ngIf="result === ''">?</ng-container>
+		<ng-container *ngIf="result !== ''">{{ result }}</ng-container>
+
+	</h2><input [(ngModel)]=result>
+	<button (click)="validate()">Prüfen</button>
+
+	<h2 [ngClass]="{ 
+    'right': resultIs.value === true,
+    'wrong': resultIs.value === false
+   }">{{ resultIs.text }}</h2>
+
+
+	<button (click)="next()">Nächste Aufgabe</button>
+</div>

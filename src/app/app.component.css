@@ -1,0 +1,16 @@
+p {
+  font-family: Lato;
+}
+
+.equation {
+  padding-top:100px; 
+  text-align: center;
+}
+
+.right {
+  color: green;
+}
+
+.wrong {
+  color: red;
+}
